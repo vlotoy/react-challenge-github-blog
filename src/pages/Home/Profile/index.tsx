@@ -16,9 +16,11 @@ export function Profile() {
       <div>
         <ProfileHeading>
           <p>Victor Loyola</p>
-          <Link to="https://github.com/vlotoy">
-            <span>GitHub</span> <FontAwesomeIcon icon={faUpRightFromSquare} />
-          </Link>
+          <div>
+            <Link to="https://github.com/vlotoy">
+              <span>GitHub</span> <FontAwesomeIcon icon={faUpRightFromSquare} />
+            </Link>
+          </div>
         </ProfileHeading>
 
         <Bio>

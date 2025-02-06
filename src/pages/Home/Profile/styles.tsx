@@ -41,6 +41,12 @@ export const ProfileHeading = styled.div`
   ${mixins.fonts.titleL}
   color: ${({ theme }) => theme.colors['base-title']};
 
+  > div {
+    &:hover {
+      border-bottom: 1px solid ${({ theme }) => theme.colors['blue']};
+    }
+  }
+
   a {
     display: flex;
     align-items: center;
@@ -50,6 +56,10 @@ export const ProfileHeading = styled.div`
     text-decoration: none;
     text-transform: uppercase;
     color: ${({ theme }) => theme.colors['blue']};
+
+    svg {
+      padding-bottom: 1px;
+    }
   }
 
   @media (max-width: 768px) {

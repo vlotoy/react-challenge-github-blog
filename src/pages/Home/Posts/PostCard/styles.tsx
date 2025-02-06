@@ -13,8 +13,15 @@ export const Container = styled.div`
   border-radius: 10px;
   background: ${({ theme }) => theme.colors['base-post']};
 
+  &:hover {
+    padding: calc(2rem - 2px);
+    border: 2px solid ${({ theme }) => theme.colors['base-label']};
+    cursor: pointer;
+  }
+
   > header {
     width: 100%;
+    padding: -2px;
     display: flex;
     align-items: baseline;
     justify-content: space-between;
