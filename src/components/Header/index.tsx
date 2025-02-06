@@ -8,9 +8,7 @@ export function Header() {
   return (
     <Container>
       <img src={effectLeft} alt="" />
-      <div>
-        <img src={logo} alt="" />
-      </div>
+      <img src={logo} alt="" />
       <img src={effectRight} alt="" />
     </Container>
   )

@@ -17,8 +17,9 @@ export const GlobalStyle = createGlobalStyle`
     color: ${({ theme }) => theme.colors['base-text']};
     -webkit-font-smoothing: antialiased;
   }
-
+  
   body, input, textarea, button { 
+    color: ${({ theme }) => theme.colors['base-text']};
     font: 400 1rem 'Nunito', sans-serif;
     line-height: 1.6;
   }
