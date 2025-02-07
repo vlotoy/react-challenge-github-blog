@@ -1,4 +1,4 @@
-import { Post } from '..'
+import { Post } from '../../../../context/PostContext'
 import { Container } from './styles'
 
 interface PostCardProps {
@@ -13,7 +13,7 @@ export function PostCard({ post }: PostCardProps) {
         <span>{post.createdAt}</span>
       </header>
 
-      <p>{post.summary}</p>
+      <p>{post.body}</p>
     </Container>
   )
 }
