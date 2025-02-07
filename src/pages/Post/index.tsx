@@ -1,5 +1,10 @@
+import { Info } from './Info'
 import { PostContainer } from './styles'
 
 export function Post() {
-  return <PostContainer></PostContainer>
+  return (
+    <PostContainer>
+      <Info />
+    </PostContainer>
+  )
 }

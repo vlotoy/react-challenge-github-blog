@@ -7,6 +7,10 @@ export const PostsContainer = styled.div`
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 
+  a {
+    text-decoration: none;
+  }
+
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;

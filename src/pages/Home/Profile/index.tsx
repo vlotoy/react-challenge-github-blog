@@ -26,13 +26,7 @@ export function Profile() {
           </div>
         </ProfileHeading>
 
-        {owner?.bio && (
-          <Bio>
-            Tristique volutpat pulvinar vel massa, pellentesque egestas. Eu
-            viverra massa quam dignissim aenean malesuada suscipit. Nunc,
-            volutpat pulvinar vel mass.
-          </Bio>
-        )}
+        {owner?.bio && <Bio>{owner.bio}</Bio>}
 
         <Social>
           <span>

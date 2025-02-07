@@ -2,8 +2,8 @@ import styled from 'styled-components'
 import { mixins } from '../../../../styles/mixins'
 
 export const Container = styled.div`
-  width: 100%;
   padding: 2rem;
+  max-width: 26rem;
   height: 260px;
 
   display: flex;
@@ -20,8 +20,7 @@ export const Container = styled.div`
   }
 
   > header {
-    width: 100%;
-    padding: -2px;
+    /* width: 100%; */
     display: flex;
     align-items: baseline;
     justify-content: space-between;
@@ -29,6 +28,7 @@ export const Container = styled.div`
 
     > p {
       ${mixins.fonts.titleM}
+      color: ${({ theme }) => theme.colors['base-title']};
 
       @media (max-width: 768px) {
         width: 100%;
@@ -45,6 +45,7 @@ export const Container = styled.div`
       width: 40%;
       ${mixins.fonts.textS}
       text-align: right;
+      color: ${({ theme }) => theme.colors['base-span']};
     }
   }
 
@@ -56,5 +57,6 @@ export const Container = styled.div`
     -webkit-line-clamp: 4;
     line-clamp: 4;
     text-overflow: ellipsis;
+    color: ${({ theme }) => theme.colors['base-text']};
   }
 `

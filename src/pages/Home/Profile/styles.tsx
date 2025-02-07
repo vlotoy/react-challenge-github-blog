@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { mixins } from '../../../styles/mixins'
 
 export const ProfileContainer = styled.section`
-  padding: 2.5rem;
+  padding: 2rem;
 
   display: flex;
   align-items: center;
